@@ -1,0 +1,12 @@
+# Render.com configuration for optional Express API
+# Use if you need server-side logic beyond Supabase
+# Free tier: Web Service
+services:
+  - type: web
+    name: minimalist-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
